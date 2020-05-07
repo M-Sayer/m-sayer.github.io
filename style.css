@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Structure */
+body {
+  background-color: black
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+.wrapper {
+  width: 700px;
+  margin: auto;
+}
+
+/* Type */
+h1, h2, h3, p, ul, ol {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a:link { color: #00CCff; }
+a:visited { color: #9900CC; }
+a:hover { color: #3399FF; }
+a:active { color: #3399FF; }
+
+
+a:hover {
+	text-decoration: underline;	
+}
+
+/* Spacers */
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+/* layout */
+
+.hero {
+    background-image: url(images/pineapple.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align:center;
+}
+
+.hero h1 {
+	
+	color: white;
+	background: #00CCff;
+	display:inline;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+  background: black;
+  display: inline-block
+  padding: 3px 5px;
+  border-radius: 5px;
+}

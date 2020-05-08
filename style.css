@@ -33,7 +33,7 @@ a:active { color: #3399FF; }
 
 
 a:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 /* Spacers */
@@ -64,9 +64,9 @@ a:hover {
 }
 
 .hero h1 {
-	
+
 	color: white;
-	background: #00CCff;
+	background: #000;
 	display:inline;
     padding: 3px 10px;
     border-radius: 5px;

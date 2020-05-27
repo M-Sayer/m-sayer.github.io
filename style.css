@@ -1,26 +1,100 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
 /* Structure */
-body {
-  background-color: black
-}
+
+
+
+/* header */
 
 header {
+  /* background: #695BCD; */
+  margin-bottom: 40px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 }
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+
+}
+
+header nav ul li {
+  list-style-type: none;
+
+}
+
+header nav ul li a {
+  color: #FFF;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:link { color:#FFF; }
+header nav ul li a:visited { color: #FFF; }
+header nav ul li a:hover { color: #808080; }
+header nav ul li a:active { color: #FFF; }
+
+/* body */
+
+body {
+  margin: 0;
+  background-color: black;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+img {
+  width: 100%;
+}
+
+main h2 {
+  text-align: center;
+
+}
+
+main h3 {
+  text-align: center;
+
+}
+
+main p {
+
+}
+
+
 
 footer {
 
 }
 
-.wrapper {
-  width: 700px;
-  margin: auto;
+form label {
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 150px;
 }
 
 /* Type */
-h1, h2, h3, p, ul, ol {
+h1, h2, h3, p, ul, ol, form {
   color: white;
   font-family: 'Roboto', sans-serif;
 
@@ -36,45 +110,41 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Spacers */
-
-.gap-sm {
-    height: 50px;
-    width: auto;
-}
-
-.gap-md {
-    height: 100px;
-    width: auto;
-}
-
-.gap-lg {
-    height: 200px;
-    width: auto;
-}
-
 /* layout */
 
-.hero {
-    background-image: url(images/pineapple.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    text-align:center;
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
-.hero h1 {
-
-	color: white;
-	background: #000;
-	display:inline;
-    padding: 3px 10px;
-    border-radius: 5px;
+.item {
+  flex: 1;
+  margin: 10px;
 }
 
-.hero h2 {
-  background: black;
-  display: inline-block
-  padding: 3px 5px;
-  border-radius: 5px;
+.item-double {
+  flex: 2;
+  margin: 10px;
 }
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 14px 14px 0 14px;
+    padding-top: 25px;
+  }
+
+  header nav {
+    margin-top: 25px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+

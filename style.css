@@ -60,6 +60,14 @@ img {
   width: 100%;
 }
 
+img.profile-photo {
+  border-radius: 50%;
+  height: 350px;  
+  width: 350px;
+  margin-left: 100px;
+ 
+}
+
 main h2 {
   text-align: center;
 

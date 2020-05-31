@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 /* Structure */
@@ -53,6 +52,7 @@ header nav ul li a:active { color: #FFF; }
 body {
   margin: 0;
   background-color: black;
+  font-family: "Roboto", sans-serif;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -65,6 +65,7 @@ img.profile-photo {
   height: 350px;  
   width: 350px;
   margin-left: 100px;
+  margin-right: 25px;
  
 }
 
@@ -122,6 +123,8 @@ a:hover {
 
 .group {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: auto;
 }
@@ -136,7 +139,7 @@ a:hover {
   margin: 10px;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   header {
     display: flex;
     justify-content: space-between;
